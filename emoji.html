@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +19,7 @@ overflow: hidden;
 font-size: 10px;
 width: 40em;
 height: 40em;
+position:relative;
 }
 .sun {
 position: absolute;
@@ -50,22 +54,22 @@ top: 0;
 right: 0;
 width: 8em;
 height: 8em;
-animation: orbit 2.7s
-Linear infinite;
+animation: orbit 2.7s Linear infinite;
 }
-.earth: :before,
+.earth::before,
 .moon::before {
 content: '';
 position: absolute;
 border-radius: 50%;
 }
-.earth: :before {
+.earth::before {
 top: 2.8em;
 right: 2.8em;
 width: 3em;
 height: 3em;
-background-color: aqua;
+background-color:aqua;
 }
+
 .moon::before {
 top: 0.8em;
 right: 0.2em;
@@ -81,7 +85,7 @@ background-color:silver;
 </style>
 </head>
 <body>
-<div class "container">
+<div class= "container">
     <div class = "sun"></div>
     <div class ="earth">
         <div class ="moon"></div>
